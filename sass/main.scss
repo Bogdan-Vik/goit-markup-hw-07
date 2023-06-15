@@ -4,7 +4,13 @@
 @import './utils/main/visually-hidden';
 @import './componets/main/h2-text';
 @import './componets/main/workers-names';
-@import './layout/main/header';
+@import './layout/header';
 @import './layout/main/footer';
-@import './layout/portfolio/header-portfolio';
-@import './componets/potrfolio/buttons'
+@import './componets/potrfolio/buttons';
+@import './componets/main/mainbutton';
+@import './layout/main/employees';
+@import './base/main/modal-window';
+@import './base/main/main-section';
+@import './base/main/saptitel';
+@import './layout/main/companies';
+@import './layout/portfolio/potrfolio-links';
