@@ -31,18 +31,7 @@ transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
       0px 2px 1px rgba(0, 0, 0, 0.2);
      border-radius: 4px;
      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
-.close-button:hover{
-    fill: var(--accent-color); 
-}
-
-.footer-btn:hover,
-.footer-btn:focus{
-    background: var(--background-button-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
 .close-button{
     position: absolute;
     top: 8px;
@@ -58,6 +47,10 @@ transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
     align-items: center;
     cursor: pointer;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover{
+        fill: var(--accent-color); 
+    }
 }
 .modal-window-text{
     font-family: 'Roboto';
@@ -69,11 +62,6 @@ text-align: center;
 letter-spacing: 0.03em;
 margin-top: 0;
 margin-bottom: 12px;    
-}
-.contact-form-btn:hover,
-.contact-form-btn:focus{
-    background-color: var(--background-button-color);
-    cursor: pointer;
 }
 .contact-form-btn{
     padding: 10px 24px;
@@ -95,11 +83,17 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: var(--text-color);
     background: var(--accent-color);
     transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+    background-color: var(--background-button-color);
+    cursor: pointer;
+      }
 }
 .contact-form{
     padding: 40px;
-    }
-    .contact-form-field{
+ }
+.contact-form-field{
         display: block;
         margin-top: 10px;
         font-family: 'Roboto';
@@ -117,19 +111,13 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     margin-top: 4px;
     padding-left: 42px;
-    }
-    .contact-form-input:focus,
-    .contact-form-input:hover{
+
+     &:focus,
+     &:hover{
         outline: none;
     border-color: var(--accent-color);
     }
-    .contact-form-input:focus + .contact-form-images-pic{
-        fill: var(--accent-color);   
     }
-    .contact-form-input:hover + .contact-form-images-pic{
-        fill: var(--accent-color);   
-    }
-    
     .contact-form-images-pic{
         display: block;
         width: 18px;
@@ -139,6 +127,13 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         left: 14px;
         transform: translateY(-50%);
         fill: var(--contact-color);
+
+        .contact-form-input:focus + &{
+            fill: var(--accent-color);   
+        }
+        .contact-form-input:hover + &{
+            fill: var(--accent-color);   
+        }
     }
     .contact-form-images{
         position: relative;
@@ -153,10 +148,11 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         margin-bottom: 20px;
-    }
-    .contact-form-message:focus{
-        outline: none;
-        border-color: var(--accent-color);
+
+        &:focus{
+            outline: none;
+            border-color: var(--accent-color);
+        }
     }
     .contact-form-checkbox-label{
         display: flex;
@@ -170,8 +166,8 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     letter-spacing: 0.03em;
     color: var(--feedback-color);
     margin-left: 15px;
-    }
-    .contact-form-checkbox-label::before{
+     
+    &::before{
         display: inline-block;
         width: 16px;
         height: 15px;
@@ -181,20 +177,27 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         cursor: pointer;
         content: '';
         margin-right: 8px;
-    
-    }
-    .input-contact-form-checkbox:checked + .contact-form-checkbox-label::before{
-        border: 0;
-        background-repeat: no-repeat;
-        background-image: url(../images/check-box/accept.svg);
-        background-position: center;
-        background-color: var(--accent-color);
-        
-    }
-    .input-contact-form-checkbox:hover,
-    .input-contact-form-checkbox:focus + .contact-form-checkbox-label::before{
+
+        .input-contact-form-checkbox:checked + &{
+            border: 0;
+            background-repeat: no-repeat;
+            background-image: url(../images/check-box/accept.svg);
+            background-position: center;
+            background-color: var(--accent-color);
+        } 
+
+        .input-contact-form-checkbox:hover,
+        .input-contact-form-checkbox:focus + &{
         border-color: var(--accent-color);
+    }
+    }
     }
     .contact-link{
         color: var(--accent-color);
     }
+    .input-contact-form-checkbox{
+        position: relative;
+        left: 15px;
+        top: 20px;
+    }
+    

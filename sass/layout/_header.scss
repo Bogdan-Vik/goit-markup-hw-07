@@ -79,17 +79,18 @@ span{
 }
 .menu-link-header{
     position: relative;
-}
-.menu-link-header::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background: #2196F3;
-    border-radius: 2px;
-    display: block;
-    width: 100%;
-    height: 4px;
+
+    &::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: #2196F3;
+        border-radius: 2px;
+        display: block;
+        width: 100%;
+        height: 4px;
+    }
 }
 .menu-link{
     display: block;

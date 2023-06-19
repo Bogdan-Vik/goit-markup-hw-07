@@ -28,6 +28,12 @@ text-transform: uppercase;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover{
+        background-color: var(--accent-color);
+}
+
 }
 .feedback-footer-text{
     text-align: left;
@@ -50,6 +56,12 @@ border: 0;
 padding: 0;
 color: var(--text-color);
 cursor: pointer;
+
+        &:hover,
+        &:focus{
+    background: var(--background-button-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
 }
 .footer-margin{
     margin-right: 94px;
@@ -106,9 +118,5 @@ address{
         height: 20px;
         fill: var(--text-color);
         transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.workers-link-footer:focus,
-.workers-link-footer:hover{
-        background-color: var(--accent-color);
 }
 
