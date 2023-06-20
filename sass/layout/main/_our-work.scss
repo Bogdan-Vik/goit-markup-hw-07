@@ -1,4 +1,4 @@
-.images{
+.work-images__example{
     position: relative;
     display: block;
     justify-content: center;
@@ -14,7 +14,7 @@
     height: 70px;
     background: rgba(47, 48, 58, 0.8);
 }
-.images:not(:last-child){
+.work-images__example:not(:last-child){
     margin-right: 30px;
 }
 .our-advantages{
@@ -24,6 +24,9 @@
 .our-work{
     padding-bottom: 94px;
 }
-.pictures{
+.work-images__example-pictures{
+    display: block;
+}
+.employees__card-pictures{
     display: block;
 }

@@ -21,22 +21,22 @@
             <a class="main-header__logo logo"  href="./index.html" lang="en">
                 <span>Web</span>Studio
             </a>
-<ul class="nav-list list ">
+<ul class="nav-list list">
     <li class="nav-list__items">
-        <a class="nav-list__items-header-link studio link " href="./index.html">Студія</a>
+        <a class="nav-list__items-link after-link link " href="./index.html">Студія</a>
     </li>
     <li class="nav-list__items">
-        <a class="menu-link link " href="./portfolio.html">Портфоліо</a>
+        <a class="nav-list__items-link link " href="./portfolio.html">Портфоліо</a>
     </li>
     <li class="nav-list__items">
-        <a class="menu-link link " href="">Контакти</a>
+        <a class="nav-list__items-link link " href="">Контакти</a>
     </li>
 </ul>
 </nav>
-<ul class="list header-feedback">
-   <li class="nav-feedback">
-<a class=" link header-mail" href="mailto:info@devstudio.com">
-    <svg class="header-images" width="16" height="12">
+<ul class="header-feedback list">
+   <li class="nav-feedback__contacts">
+<a class="nav-feedback__contacts-info link" href="mailto:info@devstudio.com">
+    <svg class="nav-feedback__contacts-info-images" width="16" height="12">
         <use href="./images/svg/social.svg#icon-envelope">
 
         </use>
@@ -45,9 +45,9 @@
     </a>
 </li>
 
-    <li class="nav-feedback">
-<a class="link number" href="tel:+380961111111">
-    <svg class="header-images" width="10" height="16">
+    <li class="nav-feedback__contacts">
+<a class="nav-feedback__contacts-info link" href="tel:+380961111111">
+    <svg class="nav-feedback__contacts-info-images" width="10" height="16">
         <use href="./images/svg/social.svg#icon-smartphone">
 
         </use>
@@ -64,28 +64,27 @@
     <main>
 
     <section class="main-section-color">
-        <div class="main-section container">
-            <h1 class="main-text">Ефективні рішення для вашого бізнесу</h1>
-
+        <div class="main-section__text container">
+            <h1 class="main-section__text-type">Ефективні рішення для вашого бізнесу</h1>
                 <button class="main-button" type="button" data-modal-open>Замовити послугу</button>
             </div>
     </section>
     <section class="our-advantages">
         <div class="container">
         <h2 class="invisible">Наші Переваги</h2>
-        <ul class="list main-sabtitle">
-            <li class="employees-subtitle">
+        <ul class="main-sabtitle list">
+            <li class="main-sabtitle__employees">
                 <div class="background-color">
-                <svg class="work-images" width="70" height="70">
+                <svg class="main-sabtitle__employees-images" width="70" height="70">
                     <use href="./images/svg/our-work.svg#icon-antenna-1"></use>
                 </svg>
             </div>
                 <h3 class="saptitel">УВАГА ДО ДЕТАЛЕЙ</h3>
                 <p class="sabtitel">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
             </li>
-            <li class="employees-subtitle">
+            <li class="main-sabtitle__employees">
                 <div class="background-color">
-                <svg class="work-images" width="70" height="70">
+                <svg class="main-sabtitle__employees-images" width="70" height="70">
                     <use href="./images/svg/our-work.svg#icon-clock-1"></use>
                 </svg>
             </div>
@@ -93,18 +92,18 @@
                 <p class="sabtitel">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
 
             </li>
-            <li class="employees-subtitle">
+            <li class="main-sabtitle__employees">
                 <div class="background-color">
-                <svg class="work-images" width="70" height="70">
+                <svg class="main-sabtitle__employees-images" width="70" height="70">
                     <use href="./images/svg/our-work.svg#icon-diagram-1"></use>
                 </svg>
             </div>
                 <h3 class="saptitel">ПЛАНУВАННЯ</h3>
                 <p class="sabtitel">Так само консультація з широким активом значною мірою зумовлює.</p>  
             </li>
-            <li class="employees-subtitle">
+            <li class="main-sabtitle__employees">
                 <div class="background-color">
-                <svg class="work-images" width="70" height="70">
+                <svg class="main-sabtitle__employees-images" width="70" height="70">
                     <use href="./images/svg/our-work.svg#icon-astronaut-1"></use>
                 </svg>
             </div>
@@ -118,16 +117,16 @@
         <div class="container">
             <h2 class="team">Чим ми займаємося</h2>   
             <ul class="list work-images">
-                <li class="images">
-                  <img src="images/work/type.jpg" class="pictures" alt="друкує" width="370" height="294"> 
+                <li class="work-images__example">
+                  <img src="images/work/type.jpg" class="work-images__example-pictures" alt="друкує" width="370" height="294"> 
                   <div class="our-job text">Десктопні додатки</div> 
                 </li>
-                <li class="images">
-                    <img src="images/work/telefone.jpg" class="pictures" alt="звіряє" width="370" height="294">  
+                <li class="work-images__example">
+                    <img src="images/work/telefone.jpg" class="work-images__example-pictures" alt="звіряє" width="370" height="294">  
                     <div class="our-job text">Мобільні додатки</div> 
                 </li>
-                <li class="images">
-                    <img src="images/work/ipad.jpg" class="pictures" alt="малює" width="370" height="294">  
+                <li class="work-images__example">
+                    <img src="images/work/ipad.jpg" class="work-images__example-pictures" alt="малює" width="370" height="294">  
                     <div class="our-job text">Дизайнерські рішення</div> 
                 </li>
             </ul>  
@@ -137,36 +136,36 @@
         <div class="container">
             <h2 class="team">Наша команда</h2>
             <ul class="list employees">
-                <li class="employees-card">
-                    <img src="images/team/igor.jpg" class="pictures" alt="Ігор Дем'яненко" width="270" height="260">
+                <li class="employees__card">
+                    <img src="images/team/igor.jpg" class="employees__card-pictures" alt="Ігор Дем'яненко" width="270" height="260">
                     <div class="names-jobs-style">
                     <h3 class="names">Ігор Дем'яненко</h3>
                     <p class="jobs">Product Designer</p>
-                    <ul class="list workers-social">
-                     <li class="workers-link-items">
-                    <a href="" class="workers-link">
-                        <svg class="workers">
+                    <ul class="workers-social list">
+                     <li class="workers-social__link">
+                    <a href="" class="workers-social__link-job">
+                        <svg class="workers-social__link-job-images">
                             <use href="./images/svg/social.svg#icon-instagram-2" width="20" height="20"></use>
                         </svg>
                     </a>
                     </li>
-                    <li class="workers-link-items">
-                    <a href="" class="workers-link">
-                        <svg class="workers">
+                    <li class="workers-social__link">
+                    <a href="" class="workers-social__link-job">
+                        <svg class="workers-social__link-job-images">
                             <use href="./images/svg/social.svg#icon-twitter-1" width="20" height="20"></use>
                         </svg>
                     </a>
                     </li>
-                    <li class="workers-link-items">
-                    <a href="" class="workers-link">
-                        <svg class="workers">
+                    <li class="workers-social__link">
+                    <a href="" class="workers-social__link-job">
+                        <svg class="workers-social__link-job-images">
                             <use href="./images/svg/social.svg#icon-facebook-1" width="20" height="20"></use>
                         </svg>
                     </a>
                     </li>
-                    <li class="workers-link-items">
-                    <a href="" class="workers-link">
-                        <svg class="workers">
+                    <li class="workers-social__link">
+                    <a href="" class="workers-social__link-job">
+                        <svg class="workers-social__link-job-images">
                             <use href="./images/svg/social.svg#icon-linkedin-1" width="20" height="20"></use>
                         </svg>
                     </a>
@@ -175,36 +174,36 @@
                 </div>
 
                 </li>
-                <li class="employees-card">
+                <li class="employees__card">
                     <img src="images/team/repinaolga.jpg" class="pictures" alt="Ольга Рєпіна" width="270" height="260">
                     <div class="names-jobs-style">
                     <h3 class="names">Ольга Рєпіна</h3>
                     <p class="jobs">Frontend Developer</p>
                     <ul class="list workers-social">
-                        <li class="workers-link-items">
-                       <a href="" class="workers-link">
-                           <svg class="workers">
+                        <li class="workers-social__link">
+                       <a href="" class="workers-social__link-job">
+                           <svg class="workers-social__link-job-images">
                                <use href="./images/svg/social.svg#icon-instagram-2" width="20" height="20"></use>
                            </svg>
                        </a>
                        </li>
-                       <li class="workers-link-items">
-                       <a href="" class="workers-link">
-                           <svg class="workers">
+                       <li class="workers-social__link">
+                       <a href="" class="workers-social__link-job">
+                           <svg class="workers-social__link-job-images">
                                <use href="./images/svg/social.svg#icon-twitter-1" width="20" height="20"></use>
                            </svg>
                        </a>
                        </li>
-                       <li class="workers-link-items">
-                       <a href="" class="workers-link">
-                           <svg class="workers">
+                       <li class="workers-social__link">
+                       <a href="" class="workers-social__link-job">
+                           <svg class="workers-social__link-job-images">
                                <use href="./images/svg/social.svg#icon-facebook-1" width="20" height="20"></use>
                            </svg>
                        </a>
                        </li>
-                       <li class="workers-link-items">
-                       <a href="" class="workers-link">
-                           <svg class="workers">
+                       <li class="workers-social__link">
+                       <a href="" class="workers-social__link-job">
+                           <svg class="workers-social__link-job-images">
                                <use href="./images/svg/social.svg#icon-linkedin-1" width="20" height="20"></use>
                            </svg>
                        </a>
@@ -214,36 +213,36 @@
                     </div>
 
                 </li>
-                <li class="employees-card">
+                <li class="employees__card">
                     <img src="images/team/mikola.jpg" class="pictures" alt="Микола Тарасов" width="270" height="260">
                     <div class="names-jobs-style">
                     <h3 class="names">Микола Тарасов</h3>
                     <p class="jobs">Marketing</p>
                     <ul class="list workers-social">
-                     <li class="workers-link-items">
-                    <a href="" class="workers-link">
-                        <svg class="workers">
+                     <li class="workers-social__link">
+                    <a href="" class="workers-social__link-job">
+                        <svg class="workers-social__link-job-images">
                             <use href="./images/svg/social.svg#icon-instagram-2" width="20" height="20"></use>
                         </svg>
                     </a>
                     </li>
-                    <li class="workers-link-items">
-                    <a href="" class="workers-link">
-                        <svg class="workers">
+                    <li class="workers-social__link">
+                    <a href="" class="workers-social__link-job">
+                        <svg class="workers-social__link-job-images">
                             <use href="./images/svg/social.svg#icon-twitter-1" width="20" height="20"></use>
                         </svg>
                     </a>
                     </li>
-                    <li class="workers-link-items">
-                    <a href="" class="workers-link">
-                        <svg class="workers">
+                    <li class="workers-social__link">
+                    <a href="" class="workers-social__link-job">
+                        <svg class="workers-social__link-job-images">
                             <use href="./images/svg/social.svg#icon-facebook-1" width="20" height="20"></use>
                         </svg>
                     </a>
                     </li>
-                    <li class="workers-link-items">
-                    <a href="" class="workers-link">
-                        <svg class="workers">
+                    <li class="workers-social__link">
+                    <a href="" class="workers-social__link-job">
+                        <svg class="workers-social__link-job-images">
                             <use href="./images/svg/social.svg#icon-linkedin-1" width="20" height="20"></use>
                         </svg>
                     </a>
@@ -253,36 +252,36 @@
                     </div>
 
                 </li>
-                <li class="employees-card">
+                <li class="employees__card">
                     <img src="images/team/michael.jpg" class="pictures" alt="Михайло Єрмаков" width="270" height="260">
                     <div class="names-jobs-style">
                     <h3 class="names">Михайло Єрмаков</h3>
                     <p class="jobs">UI Designer</p>
                     <ul class="list workers-social">
-                     <li class="workers-link-items">
-                    <a href="" class="workers-link">
-                        <svg class="workers">
+                     <li class="workers-social__link">
+                    <a href="" class="workers-social__link-job">
+                        <svg class="workers-social__link-job-images">
                             <use href="./images/svg/social.svg#icon-instagram-2" width="20" height="20"></use>
                         </svg>
                     </a>
                     </li>
-                    <li class="workers-link-items">
-                    <a href="" class="workers-link">
-                        <svg class="workers">
+                    <li class="workers-social__link">
+                    <a href="" class="workers-social__link-job">
+                        <svg class="workers-social__link-job-images">
                             <use href="./images/svg/social.svg#icon-twitter-1" width="20" height="20"></use>
                         </svg>
                     </a>
                     </li>
-                    <li class="workers-link-items">
-                    <a href="" class="workers-link">
-                        <svg class="workers">
+                    <li class="workers-social__link">
+                    <a href="" class="workers-social__link-job">
+                        <svg class="workers-social__link-job-images">
                             <use href="./images/svg/social.svg#icon-facebook-1" width="20" height="20"></use>
                         </svg>
                     </a>
                     </li>
-                    <li class="workers-link-items">
-                    <a href="" class="workers-link">
-                        <svg class="workers">
+                    <li class="workers-social__link">
+                    <a href="" class="workers-social__link-job">
+                        <svg class="workers-social__link-job-images">
                             <use href="./images/svg/social.svg#icon-linkedin-1" width="20" height="20"></use>
                         </svg>
                     </a>
@@ -299,45 +298,45 @@
         <div class="container">
         <h2 class="team ">Постійні клієнти</h2>
 
-      <ul class=" list company-style">
-        <li class="company-margin">
-            <a href="" class="company-link">
-                <svg class="company-icon">
+      <ul class="company-style list">
+        <li class="company-style__magrin">
+            <a href="" class="company-style__magrin-link">
+                <svg class="company-style__magrin-link-images">
                     <use href="./images/svg/company.svg#icon-Logo"></use>
                 </svg>
             </a>
         </li>
-        <li class="company-margin">
-            <a href="" class="company-link">
-                <svg class="company-icon">
+        <li class="company-style__magrin">
+            <a href="" class="company-style__magrin-link">
+                <svg class="company-style__magrin-link-images">
                     <use href="./images/svg/company.svg#icon-Logo-1"></use>
                 </svg>
             </a>
         </li>
-        <li class="company-margin">
-            <a href="" class="company-link">
-                <svg class="company-icon">
+        <li class="company-style__magrin">
+            <a href="" class="company-style__magrin-link">
+                <svg class="company-style__magrin-link-images">
                     <use href="./images/svg/company.svg#icon-Logo-2"></use>
                 </svg>
             </a>
         </li>
-        <li class="company-margin">
-            <a href="" class="company-link">
-                <svg class="company-icon">
+        <li class="company-style__magrin">
+            <a href="" class="company-style__magrin-link">
+                <svg class="company-style__magrin-link-images">
                     <use href="./images/svg/company.svg#icon-Logo-3"></use>
                 </svg>
             </a>
         </li>
-        <li class="company-margin">
-            <a href="" class="company-link">
-                <svg class="company-icon">
+        <li class="company-style__magrin">
+            <a href="" class="company-style__magrin-link">
+                <svg class="company-style__magrin-link-images">
                     <use href="./images/svg/company.svg#icon-Logo-4"></use>
                 </svg>
             </a>
         </li>
-        <li class="company-margin">
-            <a href="" class="company-link">
-                <svg class="company-icon">
+        <li class="company-style__magrin">
+            <a href="" class="company-style__magrin-link">
+                <svg class="company-style__magrin-link-images">
                     <use href="./images/svg/company.svg#icon-Logo-5"></use>
                 </svg>
             </a>
@@ -348,7 +347,7 @@
          </main>
 
     <footer>
-        <div class="container footer-position">
+        <div class="footer-position container">
             <div class="footer-address-position">
         <a class="footer-logo logo"  href="./index.html" lang="en">
             <span>Web</span>Studio
@@ -372,29 +371,29 @@
 <div class="footer-margin">
     <h2 class="footer-team">приєднуйтесь</h2>
     <ul class="list workers-social-footer">
-        <li class="workers-link-items">
-       <a href="" class="workers-link-footer">
+        <li class="workers-social__link-job-items">
+       <a href="" class="workers-social__link-job-footer">
            <svg class="workers-footer">
                <use href="./images/svg/social.svg#icon-instagram-2" width="20" height="20"></use>
            </svg>
        </a>
        </li>
-       <li class="workers-link-items">
-       <a href="" class="workers-link-footer">
+       <li class="workers-social__link-job-items">
+       <a href="" class="workers-social__link-job-footer">
            <svg class="workers-footer">
                <use href="./images/svg/social.svg#icon-twitter-1" width="20" height="20"></use>
            </svg>
        </a>
        </li>
-       <li class="workers-link-items">
-       <a href="" class="workers-link-footer">
+       <li class="workers-social__link-job-items">
+       <a href="" class="workers-social__link-job-footer">
            <svg class="workers-footer">
                <use href="./images/svg/social.svg#icon-facebook-1" width="20" height="20"></use>
            </svg>
        </a>
        </li>
-       <li class="workers-link-items">
-       <a href="" class="workers-link-footer">
+       <li class="workers-social__link-job-items">
+       <a href="" class="workers-social__link-job-footer">
            <svg class="workers-footer">
                <use href="./images/svg/social.svg#icon-linkedin-1" width="20" height="20"></use>
            </svg>

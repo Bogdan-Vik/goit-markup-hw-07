@@ -14,14 +14,13 @@
     display: flex;
     align-items: center;
 }
-.header-mail{
+.nav-feedback__contacts-info{
     color: var(--feedback-color);
     padding-top: 32px;
     padding-bottom: 32px;
     display: flex;
     align-items: center;
 }
-
 .studio{
     color: var(--accent-color);
     display: block;
@@ -71,15 +70,14 @@ span{
 .nav-list__items:not(:last-child){
     margin-right: 50px;
 }
-.nav-feedback:not(:last-child){
+.nav-feedback__contacts:not(:last-child){
     margin-right: 40px;
 }
-.header-images{
+.nav-feedback__contacts-info-images{
     fill:currentColor;
-    margin-right: 8px;
-    
+    margin-right: 8px;  
 }
-.nav-list__items-header-link{
+.after-link{
     position: relative;
 
     &::after{
@@ -94,7 +92,7 @@ span{
         height: 4px;
     }
 }
-.menu-link{
+.nav-list__items-link{
     display: block;
     padding-bottom: 32px;
     padding-top: 32px;

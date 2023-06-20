@@ -125,7 +125,7 @@ body {
   align-items: center;
 }
 
-.header-mail {
+.nav-feedback__contacts-info {
   color: var(--feedback-color);
   padding-top: 32px;
   padding-bottom: 32px;
@@ -190,19 +190,19 @@ span {
   margin-right: 50px;
 }
 
-.nav-feedback:not(:last-child) {
+.nav-feedback__contacts:not(:last-child) {
   margin-right: 40px;
 }
 
-.header-images {
+.nav-feedback__contacts-info-images {
   fill: currentColor;
   margin-right: 8px;
 }
 
-.nav-list__items-header-link {
+.after-link {
   position: relative;
 }
-.nav-list__items-header-link::after {
+.after-link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -214,7 +214,7 @@ span {
   height: 4px;
 }
 
-.menu-link {
+.nav-list__items-link {
   display: block;
   padding-bottom: 32px;
   padding-top: 32px;
@@ -361,7 +361,7 @@ address {
   justify-content: center;
 }
 
-.buttons-indent:not(:last-child) {
+.portfolio-indent-buttons:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -420,7 +420,7 @@ address {
   margin-left: -30px;
 }
 
-.employees-card {
+.employees__card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   margin-top: 30px;
@@ -428,7 +428,7 @@ address {
   background-color: var(--text-color);
 }
 
-.employees-subtitle:not(:last-child) {
+.main-sabtitle__employees:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -479,7 +479,7 @@ address {
   margin-bottom: 16px;
 }
 
-.workers-link {
+.workers-social__link-job {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -488,17 +488,17 @@ address {
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.workers-link:focus, .workers-link:hover {
+.workers-social__link-job:focus, .workers-social__link-job:hover {
   background-color: var(--accent-color);
 }
 
-.workers {
+.workers-social__link-job-images {
   width: 20px;
   height: 20px;
   fill: var(--social-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.workers-link:focus .workers, .workers-link:hover .workers {
+.workers-social__link-job:focus .workers-social__link-job-images, .workers-social__link-job:hover .workers-social__link-job-images {
   fill: var(--text-color);
 }
 
@@ -507,7 +507,7 @@ address {
   justify-content: space-between;
 }
 
-.workers-link-items:not(:last-child) {
+.workers-social__link:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -714,7 +714,7 @@ address {
   top: 20px;
 }
 
-.main-section {
+.main-section__text {
   justify-content: center;
 }
 
@@ -730,7 +730,7 @@ address {
   padding-bottom: 200px;
 }
 
-.main-text {
+.main-section__text-type {
   text-align: center;
   max-width: 696px;
   font-style: normal;
@@ -802,6 +802,12 @@ address {
   margin-top: 0;
 }
 
+.main-sabtitle__employees-images {
+  display: flex;
+  padding-left: 0;
+  margin-top: 0;
+}
+
 .work-images {
   display: flex;
   padding-left: 0;
@@ -815,7 +821,7 @@ address {
   padding-right: 0;
 }
 
-.company-icon {
+.company-style__magrin-link-images {
   width: 106px;
   height: 60px;
 }
@@ -826,11 +832,11 @@ address {
   justify-content: center;
 }
 
-.company-margin:not(:last-child) {
+.company-style__magrin:not(:last-child) {
   margin-right: 30px;
 }
 
-.company-link {
+.company-style__magrin-link {
   display: flex;
   width: 170px;
   height: 92px;
@@ -843,7 +849,7 @@ address {
   border-color: var(--social-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.company-link:hover, .company-link:focus {
+.company-style__magrin-link:hover, .company-style__magrin-link:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -883,7 +889,7 @@ address {
   margin-top: 0;
 }
 
-.employees-card-portfolio {
+.employees__card-portfolio {
   margin-top: 30px;
   margin-left: 30px;
 }
@@ -893,7 +899,7 @@ address {
   padding-bottom: 94px;
 }
 
-.link-portfolio {
+.employees__card-portfolio-link {
   display: block;
   text-decoration: none;
   color: var(--primary-text-color);
@@ -901,7 +907,7 @@ address {
   overflow: hidden;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link-portfolio:focus, .link-portfolio:hover {
+.employees__card-portfolio-link:focus, .employees__card-portfolio-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -918,7 +924,7 @@ address {
   z-index: 1;
   transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link-portfolio:hover .text-portfolio, .link-portfolio:focus .text-portfolio {
+.employees__card-portfolio-link:hover .text-portfolio, .employees__card-portfolio-link:focus .text-portfolio {
   top: 0;
 }
 
@@ -931,4 +937,43 @@ address {
   letter-spacing: 0.03em;
   padding: 64px 24px;
   color: var(--text-color);
+}
+
+.work-images__example {
+  position: relative;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-job {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.work-images__example:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-advantages {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.our-work {
+  padding-bottom: 94px;
+}
+
+.work-images__example-pictures {
+  display: block;
+}
+
+.employees__card-pictures {
+  display: block;
 }/*# sourceMappingURL=main.css.map */
