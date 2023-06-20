@@ -29,8 +29,10 @@
 padding-top: 32px;
 
 }
-.logo{
+.main-header__logo{
     margin-right: 92px;
+}
+.logo{
     text-decoration: none;
     font-family: 'Raleway',sans-serif;
 
@@ -66,7 +68,7 @@ span{
     margin-left: auto;
     margin-top: 0;
 }
-.nav-list-items:not(:last-child){
+.nav-list__items:not(:last-child){
     margin-right: 50px;
 }
 .nav-feedback:not(:last-child){
@@ -77,7 +79,7 @@ span{
     margin-right: 8px;
     
 }
-.menu-link-header{
+.nav-list__items-header-link{
     position: relative;
 
     &::after{

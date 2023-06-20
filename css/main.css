@@ -140,8 +140,11 @@ body {
   padding-top: 32px;
 }
 
-.logo {
+.main-header__logo {
   margin-right: 92px;
+}
+
+.logo {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -183,7 +186,7 @@ span {
   margin-top: 0;
 }
 
-.nav-list-items:not(:last-child) {
+.nav-list__items:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -196,10 +199,10 @@ span {
   margin-right: 8px;
 }
 
-.menu-link-header {
+.nav-list__items-header-link {
   position: relative;
 }
-.menu-link-header::after {
+.nav-list__items-header-link::after {
   content: "";
   position: absolute;
   left: 0;
