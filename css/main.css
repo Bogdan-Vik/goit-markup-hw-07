@@ -13,44 +13,16 @@
   --contact-color: #212121;
 }
 
-.text {
+.main-text-roboto {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 36px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--text-color);
-}
-
-.text-portfolio {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  width: 370px;
-  height: 294px;
-  background: rgba(33, 150, 243, 0.9);
-  position: absolute;
-  bottom: 0;
-  top: 75%;
-  z-index: 1;
-  transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.employees__card-portfolio-link:hover .text-portfolio, .employees__card-portfolio-link:focus .text-portfolio {
-  top: 0;
-}
-
-.text-portfolio-theme {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.03em;
-  padding: 64px 24px;
-  color: var(--text-color);
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .link {
@@ -80,31 +52,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.link-footer {
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
-  letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.link-footer:hover, .link-footer:focus {
-  color: var(--accent-color);
-}
-
-.feedback-adress {
-  color: var(--text-color);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-}
-
 .container {
   width: 1200px;
   margin-left: auto;
@@ -127,17 +74,6 @@ body {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.team {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-top: 0;
-  margin-bottom: 50px;
 }
 
 .names {
@@ -201,10 +137,6 @@ body {
 
 span {
   color: var(--accent-color);
-}
-
-.feedback {
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .header-container {
@@ -304,10 +236,6 @@ footer {
 }
 .workers-link-footer:focus, .workers-link-footer:hover {
   background-color: var(--accent-color);
-}
-
-.feedback-footer-text {
-  text-align: left;
 }
 
 .footer-btn {
@@ -1001,4 +929,77 @@ address {
 
 .employees__card-pictures {
   display: block;
+}
+
+.text-portfolio {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 370px;
+  height: 294px;
+  background: rgba(33, 150, 243, 0.9);
+  position: absolute;
+  bottom: 0;
+  top: 75%;
+  z-index: 1;
+  transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.employees__card-portfolio-link:hover .text-portfolio, .employees__card-portfolio-link:focus .text-portfolio {
+  top: 0;
+}
+
+.text-portfolio-theme {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  padding: 64px 24px;
+  color: var(--text-color);
+}
+
+.text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.feedback-footer-text {
+  text-align: left;
+}
+
+.link-footer {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-footer:hover, .link-footer:focus {
+  color: var(--accent-color);
+}
+
+.feedback-adress {
+  color: var(--text-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.feedback {
+  color: rgba(255, 255, 255, 0.6);
 }/*# sourceMappingURL=main.css.map */
